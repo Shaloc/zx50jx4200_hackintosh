@@ -150,7 +150,11 @@
 		<dict>
 			<key>Inject</key>
 			<integer>3</integer>
+			<key>ResetHDA</key>
+			<false/>
 		</dict>
+		<key>HDMIInjection</key>
+		<true/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
@@ -218,6 +222,8 @@
 			<key>Inject</key>
 			<true/>
 		</dict>
+		<key>UseIntelHDMI</key>
+		<true/>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
