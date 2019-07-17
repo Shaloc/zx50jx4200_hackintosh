@@ -46,9 +46,9 @@ bios中关闭power off energy saving
 终端输入 sudo spctl --master-disable
 
 2.建立一个在Win和Mac下都能读取的分区
-
-    在win系统下自带的磁盘管理工具中压缩一个适量空间的分区然后新建简单卷分配盘符然后格式化为exFAT格式,这个分区的内容就能在win和mac系统下都能读取了。）
-
+`
+在win系统下自带的磁盘管理工具中压缩一个适量空间的分区然后新建简单卷分配盘符然后格式化为exFAT格式,这个分区的内容就能在win和mac系统下都能读取了。）
+`
 3.开启Hidpi 
 
 ```
@@ -58,8 +58,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master
 然后用RDM调整分辨率(未提供下载)
 
 4.修复声卡输入 
-
-    使用麦克风修复目录下载教程修复
+`
+使用麦克风修复目录下载教程修复
+`
 
 5.修复睡眠
 
@@ -70,6 +71,7 @@ kextstat | grep -v "com.apple"      显示除了苹果之外的驱动加载
 kextstat | grep -v "com.apple" | grep -v "Energy"   查看加载的非官方驱动
 
 7.解决Mojave在低分屏上字体发虚需要做两件事情：
+```
 1）打开 【终端】应用，输入下面命令，全局启用 次像素抗锯齿 渲染：
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 2）设置字体 次像素抗锯齿 级别 (类似 Linux 的 hintstyle 微调样式) 的命令：
@@ -77,7 +79,7 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
 还原命令为：
 1）defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES
 2）defaults -currentHost delete -globalDomain AppleFontSmoothing
-
+```
 8.如果没有更换dw1560网卡（如果打算长期使用黑苹果并打算使用隔空投送的话建议更换网卡）
 
 删除Clover/kexts/others下面四个驱动
