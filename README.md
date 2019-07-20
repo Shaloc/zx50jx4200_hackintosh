@@ -46,9 +46,11 @@ bios中关闭power off energy saving
 终端输入 sudo spctl --master-disable
 
 2.建立一个在Win和Mac下都能读取的分区
+
 `
 在win系统下自带的磁盘管理工具中压缩一个适量空间的分区然后新建简单卷分配盘符然后格式化为exFAT格式,这个分区的内容就能在win和mac系统下都能读取了。）
 `
+
 3.开启Hidpi 
 
 ```
