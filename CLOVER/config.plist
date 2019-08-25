@@ -5,7 +5,7 @@
 	<key>ACPI</key>
 	<dict>
 		<key>AutoMerge</key>
-		<true/>
+		<false/>
 		<key>DSDT</key>
 		<dict>
 			<key>Debug</key>
@@ -15,9 +15,9 @@
 				<key>#Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>AddHDMI</key>
-				<true/>
+				<false/>
 				<key>AddPNLF</key>
-				<true/>
+				<false/>
 				<key>FixHDA</key>
 				<false/>
 				<key>FixIntelGfx</key>
@@ -115,7 +115,7 @@
 			</dict>
 		</array>
 		<key>FixHeaders</key>
-		<true/>
+		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -123,12 +123,12 @@
 			<key>Generate</key>
 			<dict>
 				<key>PluginType</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>NoDynamicExtract</key>
-			<true/>
+			<false/>
 			<key>NoOemTableId</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>Boot</key>
@@ -158,6 +158,8 @@
 			<false/>
 		</dict>
 		<key>HDMIInjection</key>
+		<false/>
+		<key>LANInjection</key>
 		<false/>
 		<key>Properties</key>
 		<dict>
@@ -291,7 +293,7 @@
 			SEdFLUUxMQogAOA=
 			</data>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Inject</key>
 		<dict>
