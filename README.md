@@ -1,7 +1,7 @@
 # Asus ZX50J
 
 zx50jx4200_hackintosh
-华硕zx50jx4200 黑苹果Clover 可用于安装10.14.5
+华硕zx50jx4200 黑苹果Clover 可用于安装10.14.6
 
 ## 配置：
 
