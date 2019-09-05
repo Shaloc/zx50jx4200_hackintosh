@@ -57,34 +57,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change B0D3 to HDAU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					QjBEMw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SERBVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change _DSM to XDSM</string>
 					<key>Disabled</key>
 					<false/>
