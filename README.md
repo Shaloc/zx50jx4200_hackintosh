@@ -1,8 +1,7 @@
 # Asus ZX50J
 
 zx50jx4200_hackintosh
-华硕zx50jx4200 黑苹果Clover 可用于安装10.14.6
-
+华硕zx50jx4200 黑苹果Clover 可用于安装10.15
 ## 配置：
 
 CPU：i5-4200h
@@ -22,7 +21,9 @@ CPU：i5-4200h
 
 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1761359&highlight=zx50
 
-
+## 10.15暂未修复bug
+1.usb3.0无法工作
+2.未知bug
 
 ## 目前bug 
 1.fn+F1会导致睡死 
@@ -33,7 +34,7 @@ http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1761359&highlight=zx50
 
 4.HDMI音频有输出，但是会破音
 
-5.其他未发现bug
+5.未知bug
 
 音频输入需要用工具修复
 
