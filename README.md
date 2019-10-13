@@ -21,14 +21,10 @@ CPU：i5-4200h
 
 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1761359&highlight=zx50
 
-## 10.15暂未修复bug
-1.usb3.0无法工作
-2.未知bug
-
 ## 目前bug 
 1.fn+F1会导致睡死 
 
-2.开启HIDPI后开机画面闪现8苹果 进系统后画面正常
+2.开启HIDPI后开机画面闪现8苹果 进系统后画面正常(已经调整clover分辨率，解决该问题）
 
 3.无法使用pppoe拨号 未测试（原efi有这个bug）
 
@@ -52,28 +48,20 @@ bios中关闭power off energy saving
 在win系统下自带的磁盘管理工具中压缩一个适量空间的分区然后新建简单卷分配盘符然后格式化为exFAT格式,这个分区的内容就能在win和mac系统下都能读取了。）
 `
 
-3.开启Hidpi 
-
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
-```
-
-然后用RDM调整分辨率(未提供下载)
-
-4.修复声卡输入 
+3.修复声卡输入 
 `
 使用麦克风修复目录下载教程修复
 `
 
-5.修复睡眠
+4.修复睡眠
 
 bios中关闭power off energy saving
 
-6.查看加载的驱动
+5.查看加载的驱动
 kextstat | grep -v "com.apple"      显示除了苹果之外的驱动加载
 kextstat | grep -v "com.apple" | grep -v "Energy"   查看加载的非官方驱动
 
-7.解决Mojave在低分屏上字体发虚需要做两件事情：
+6.解决Mojave在低分屏上字体发虚需要做两件事情：
 ```
 1）打开 【终端】应用，输入下面命令，全局启用 次像素抗锯齿 渲染：
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
@@ -83,7 +71,7 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
 1）defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES
 2）defaults -currentHost delete -globalDomain AppleFontSmoothing
 ```
-8.如果没有更换dw1560网卡（如果打算长期使用黑苹果并打算使用隔空投送的话建议更换网卡）
+7.如果没有更换dw1560网卡（如果打算长期使用黑苹果并打算使用隔空投送的话建议更换网卡）
 
 删除Clover/kexts/others下面四个驱动
 AirportBrcmFixup.kext 
