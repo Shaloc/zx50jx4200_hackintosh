@@ -78,3 +78,7 @@ AirportBrcmFixup.kext
 FakePCIID_Broadcom_WiFi.kext 
 BrcmFirmwareData.kext
 BrcmPatchRAM2.kext 
+
+8.开启“随航(Sidecar)”
+
+备份原来的系统文件`/System/Library/PrivateFrameworks/SidecarCore.framework/Versions/A/SidecarCore`，使用`wget`或者直接在浏览器中下载补丁`http://dev.zeppel.eu/luca/SidecarCorePatch/raw/master/patch.swift`，然后在终端中使用`swift patch.swift`，重新启动，即可打开“随航”。
