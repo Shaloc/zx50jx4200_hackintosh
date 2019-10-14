@@ -22,7 +22,7 @@ CPU：Intel i5-4200h
 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1761359&highlight=zx50
 
 ## 目前bug 
-1.fn+F1会导致睡死 （请勿尝试）
+1.fn+F1会导致睡死 （请勿尝试!）
 
 2.开启HIDPI后开机画面闪现8苹果 进系统后画面正常(已经调整clover分辨率，解决该问题）
 
