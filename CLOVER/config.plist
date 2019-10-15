@@ -17,7 +17,7 @@
 				<key>AddHDMI</key>
 				<false/>
 				<key>AddPNLF</key>
-				<false/>
+				<true/>
 				<key>FixHDA</key>
 				<false/>
 				<key>FixIntelGfx</key>
@@ -148,6 +148,10 @@
 				</data>
 			</dict>
 		</dict>
+		<key>SetIntelBacklight</key>
+		<true/>
+		<key>SetIntelMaxBacklight</key>
+		<true/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
