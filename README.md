@@ -35,8 +35,9 @@ http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1761359&highlight=zx50
 6.未知bug
 
 音频输入需要用工具修复
-
-目前还挺完美的 包括变频  键盘灯 亮度调节 等
+变频正常
+键盘灯正常  
+Fn快捷键正常
 10.14.6下启用睡眠需要关闭bios的CPU节能功能
 bios中关闭power off energy saving
 
