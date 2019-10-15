@@ -18,10 +18,12 @@ CPU：Intel i5-4200h
 注：如果没有更换dw1560网卡（如果打算长期使用黑苹果并打算使用隔空投送的话建议更换网卡）
 
 删除Clover/kexts/others下面四个驱动
+```
 AirportBrcmFixup.kext 
 FakePCIID_Broadcom_WiFi.kext 
 BrcmFirmwareData.kext
 BrcmPatchRAM2.kext 
+```
 并搜索原装AR9565或自己的网卡的驱动方法
 
 ## 目前bug 
@@ -39,13 +41,17 @@ BrcmPatchRAM2.kext
 6.未知bug
 ```
 2019年10月16日重新提取dsdt、ssdt
-
+```
 音频输入需要用工具修复
-变频正常
-屏幕亮度正常
-键盘灯正常  
-Fn快捷键正常
 
+变频正常
+
+屏幕亮度正常
+
+键盘灯正常  
+
+Fn快捷键正常
+```
 10.14.6下启用睡眠需要关闭bios的CPU节能功能
 bios中关闭power off energy saving
 
