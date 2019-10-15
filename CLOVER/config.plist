@@ -117,7 +117,7 @@
 			<false/>
 		</dict>
 		<key>HDMIInjection</key>
-		<true/>
+		<false/>
 		<key>LANInjection</key>
 		<false/>
 		<key>Properties</key>
@@ -196,19 +196,15 @@
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
-			<true/>
+			<false/>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
-		<true/>
+		<false/>
 	</dict>
-	<key>DisableDrivers</key>
-	<array>
-		<string>VBoxHfs</string>
-	</array>
 	<key>GUI</key>
 	<dict>
 		<key>#ScreenResolution</key>
