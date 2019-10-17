@@ -1,7 +1,8 @@
 # Asus ZX50J
 
-zx50jx4200_hackintosh
+ZX50jxJX4200_hackintosh
 华硕zx50jx4200 黑苹果EFI配置 可适用于macos 10.15
+注：本仓库仅供极客玩家测试使用，请勿用于任何商业行为！
 ## 配置：
 
 CPU：Intel i5-4200h
@@ -13,9 +14,9 @@ CPU：Intel i5-4200h
 外存：东芝120G m.2 SSD + 原厂1t机械
 
 网卡/蓝牙：无线网卡蓝牙更换为 DW1560 NGFF接口
+## 其他网卡驱动
 
-
-注：如果没有更换dw1560网卡（如果打算长期使用黑苹果并打算使用隔空投送的话建议更换网卡）
+### 原装网卡驱动WiFi教程地址
 
 删除Clover/kexts/others下面四个驱动
 ```
@@ -24,7 +25,9 @@ FakePCIID_Broadcom_WiFi.kext
 BrcmFirmwareData.kext
 BrcmPatchRAM2.kext 
 ```
-并搜索原装AR9565或自己的网卡的驱动方法
+http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1829501&highlight=AR9565
+### DW1820A 驱动教程地址
+https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html
 
 ## 目前bug 
 ```
@@ -37,8 +40,9 @@ BrcmPatchRAM2.kext
 4.HDMI音频有输出，但是会破音 （很久没测试了。可能驱动更新修复了）
 
 5.未知bug
-```
+
 2019年10月16日重新提取dsdt、ssdt
+```
 ```
 音频输入需要用工具修复
 
@@ -48,12 +52,12 @@ BrcmPatchRAM2.kext
 
 键盘灯正常  
 
-睡眠唤醒正常
+睡眠唤醒正常(启用睡眠需要bios中关闭power off energy saving)
 
 Fn快捷键正常
 ```
-10.14.6下启用睡眠需要关闭bios的CPU节能功能
-bios中关闭power off energy saving
+仿冒白苹果鼠标教程
+https://sxz799.ml/2019/10/17/%E9%BB%91%E8%8B%B9%E6%9E%9C%E4%B9%8B%E4%BB%BF%E5%86%92%E7%99%BD%E8%8B%B9%E6%9E%9C%E9%BC%A0%E6%A0%87/
 
 ## 其他辅助技巧
 1.打开安全和隐私中的任何来源 
@@ -129,6 +133,7 @@ defaults -currentHost delete -globalDomain AppleFontSmoothing
 				</dict>
 ```
 ```
+主要：
 <dict>
 					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
