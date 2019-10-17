@@ -36,9 +36,7 @@ BrcmPatchRAM2.kext
 
 4.HDMI音频有输出，但是会破音 （很久没测试了。可能驱动更新修复了）
 
-5.睡眠不正常（10.14.6是正常的）
-
-6.未知bug
+5.未知bug
 ```
 2019年10月16日重新提取dsdt、ssdt
 ```
@@ -49,6 +47,8 @@ BrcmPatchRAM2.kext
 屏幕亮度正常
 
 键盘灯正常  
+
+睡眠唤醒正常
 
 Fn快捷键正常
 ```
@@ -97,4 +97,50 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES
 ```
 defaults -currentHost delete -globalDomain AppleFontSmoothing
 ```
-
+影响睡眠的因素：
+```
+				<dict>
+					<key>Comment</key>
+					<string>change EHC1 to EH01</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC2 to EH02</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMg==
+					</data>
+				</dict>
+```
+```
+<dict>
+					<key>Comment</key>
+					<string>change GFX0 to IGPU</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0ZYMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					SUdQVQ==
+					</data>
+				</dict>
+```
