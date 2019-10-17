@@ -878,12 +878,12 @@ DefinitionBlock ("", "SSDT", 1, "SaSsdt", "SaSsdt ", 0x00003000)
                     }
                 }
             }
-            Method (_DSM, 4, NotSerialized)
+            Method (XDSM, 4, NotSerialized)
             {
                 If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
                 Return (Package()
                 {
-                    "layout-id", Buffer() { 14, 0x00, 0x00, 0x00 },
+                    "layout-id", Buffer() { 3, 0x00, 0x00, 0x00 },
                     "hda-gfx", Buffer() { "onboard-1" },
                 })
             }
@@ -4166,7 +4166,7 @@ DefinitionBlock ("", "SSDT", 1, "SaSsdt", "SaSsdt ", 0x00003000)
 
                 Return (D2AF (\_SB.CSTE))
             }
-            Method (_DSM, 4, NotSerialized)
+            Method (XDSM, 4, NotSerialized)
             {
                 If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
                 Return (Package()
