@@ -9775,7 +9775,8 @@ DefinitionBlock ("", "DSDT", 2, "_ASUS_", "Notebook", 0x00000012)
 
     Method (_PTS, 1, NotSerialized)  // _PTS: Prepare To Sleep
     {
-        External(\_SB.PCI0.PEG0.PEGP._ON, MethodObj)
+        If (LNotEqual(Arg0,5)) {
+External(\_SB.PCI0.PEG0.PEGP._ON, MethodObj)
 If (CondRefOf(\_SB.PCI0.PEG0.PEGP._ON)) { \_SB.PCI0.PEG0.PEGP._ON() }
 PTS (Arg0)
         ADBG (Concatenate ("_PTS=", ToHexString (Arg0)))
@@ -9789,7 +9790,7 @@ PTS (Arg0)
 
         If (LEqual (Arg0, 0x03))
         {
-            If (And (ICNF, One))
+            If (LAnd(CondRefOf(\_SB.IAOE), And(ICNF,One)))
             {
                 If (LAnd (And (ICNF, 0x10), LEqual (\_SB.IAOE.ITMR, Zero))){}
                 If (LAnd (And (ICNF, 0x10), CondRefOf (\_SB.IFFS.FFSS)))
@@ -9811,6 +9812,9 @@ PTS (Arg0)
         {
             \_SB.TPM.PTS (Arg0)
         }
+}
+        If (5 == Arg0) { \_SB.PCI0.XHC.PMEE = 0 }
+
     }
 
     Method (_WAK, 1, Serialized)  // _WAK: Wake
@@ -9902,103 +9906,9 @@ Return (Package (0x02)
 
     Method (PNOT, 0, Serialized)
     {
-        If (CondRefOf (\_SB.PCCD.PENB))
-        {
-            Notify (\_SB.PCCD, 0x82)
-        }
-        ElseIf (LGreater (TCNT, One))
-        {
-            If (And (PDC0, 0x08))
-            {
-                Notify (\_PR.CPU0, 0x80)
-            }
+        
+        // nothing
 
-            If (And (PDC1, 0x08))
-            {
-                Notify (\_PR.CPU1, 0x80)
-            }
-
-            If (And (PDC2, 0x08))
-            {
-                Notify (\_PR.CPU2, 0x80)
-            }
-
-            If (And (PDC3, 0x08))
-            {
-                Notify (\_PR.CPU3, 0x80)
-            }
-
-            If (And (PDC4, 0x08))
-            {
-                Notify (\_PR.CPU4, 0x80)
-            }
-
-            If (And (PDC5, 0x08))
-            {
-                Notify (\_PR.CPU5, 0x80)
-            }
-
-            If (And (PDC6, 0x08))
-            {
-                Notify (\_PR.CPU6, 0x80)
-            }
-
-            If (And (PDC7, 0x08))
-            {
-                Notify (\_PR.CPU7, 0x80)
-            }
-        }
-        Else
-        {
-            Notify (\_PR.CPU0, 0x80)
-        }
-
-        If (LGreater (TCNT, One))
-        {
-            If (LAnd (And (PDC0, 0x08), And (PDC0, 0x10)))
-            {
-                Notify (\_PR.CPU0, 0x81)
-            }
-
-            If (LAnd (And (PDC1, 0x08), And (PDC1, 0x10)))
-            {
-                Notify (\_PR.CPU1, 0x81)
-            }
-
-            If (LAnd (And (PDC2, 0x08), And (PDC2, 0x10)))
-            {
-                Notify (\_PR.CPU2, 0x81)
-            }
-
-            If (LAnd (And (PDC3, 0x08), And (PDC3, 0x10)))
-            {
-                Notify (\_PR.CPU3, 0x81)
-            }
-
-            If (LAnd (And (PDC4, 0x08), And (PDC4, 0x10)))
-            {
-                Notify (\_PR.CPU4, 0x81)
-            }
-
-            If (LAnd (And (PDC5, 0x08), And (PDC5, 0x10)))
-            {
-                Notify (\_PR.CPU5, 0x81)
-            }
-
-            If (LAnd (And (PDC6, 0x08), And (PDC6, 0x10)))
-            {
-                Notify (\_PR.CPU6, 0x81)
-            }
-
-            If (LAnd (And (PDC7, 0x08), And (PDC7, 0x10)))
-            {
-                Notify (\_PR.CPU7, 0x81)
-            }
-        }
-        Else
-        {
-            Notify (\_PR.CPU0, 0x81)
-        }
     }
 
     OperationRegion (MBAR, SystemMemory, Add (ShiftLeft (\_SB.PCI0.MHBR, 0x0F), 0x5000), 0x1000)
