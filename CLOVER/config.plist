@@ -15,7 +15,7 @@
 				<key>#Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>AddHDMI</key>
-				<true/>
+				<false/>
 				<key>AddPNLF</key>
 				<true/>
 				<key>FixHDA</key>
@@ -23,6 +23,8 @@
 				<key>FixIntelGfx</key>
 				<false/>
 				<key>FixRTC</key>
+				<false/>
+				<key>FixWAK</key>
 				<false/>
 			</dict>
 			<key>Patches</key>
