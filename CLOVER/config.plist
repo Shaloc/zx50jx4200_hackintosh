@@ -24,8 +24,6 @@
 				<false/>
 				<key>FixRTC</key>
 				<false/>
-				<key>FixWAK</key>
-				<false/>
 			</dict>
 			<key>Patches</key>
 			<array>
