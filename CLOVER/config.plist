@@ -57,34 +57,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change B0D3 to HDAU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					QjBEMw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SERBVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change _DSM to XDSM</string>
 					<key>Disabled</key>
 					<false/>
@@ -198,17 +170,9 @@
 				<data>
 				AQAAAA==
 				</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
 				<key>framebuffer-con1-type</key>
 				<data>
 				AAgAAA==
-				</data>
-				<key>framebuffer-con2-alldata</key>
-				<data>
-				/wAAAAEAAABAAAAA
 				</data>
 				<key>framebuffer-con2-enable</key>
 				<data>
@@ -226,10 +190,6 @@
 				<data>
 				AACQAA==
 				</data>
-				<key>framebuffer-memorycount</key>
-				<data>
-				AgAAAA==
-				</data>
 				<key>framebuffer-patch-enable</key>
 				<data>
 				AQAAAA==
@@ -241,16 +201,6 @@
 				<key>framebuffer-unifiedmem</key>
 				<data>
 				AAAAgA==
-				</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x3,0x0)</key>
-			<dict>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>layout-id</key>
-				<data>
 				</data>
 			</dict>
 		</dict>
