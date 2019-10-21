@@ -27,9 +27,9 @@ FakePCIID_Broadcom_WiFi.kext
 BrcmFirmwareData.kext
 BrcmPatchRAM2.kext 
 ```
-http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1829501&highlight=AR9565
-### DW1820A 驱动教程地址
-https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html
+原装网卡驱动教程[地址](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1829501&highlight=AR9565 "试试效果")
+
+DW1820A 驱动教程[地址](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)
 
 ## 目前bug 
 ```
@@ -58,8 +58,7 @@ https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-postur
 
 Fn快捷键正常
 ```
-仿冒白苹果鼠标教程
-https://sxz799.ml/2019/10/17/%E9%BB%91%E8%8B%B9%E6%9E%9C%E4%B9%8B%E4%BB%BF%E5%86%92%E7%99%BD%E8%8B%B9%E6%9E%9C%E9%BC%A0%E6%A0%87/
+仿冒白苹果鼠标教程[地址](https://sxz799.ml/2019/10/17/%E9%BB%91%E8%8B%B9%E6%9E%9C%E4%B9%8B%E4%BB%BF%E5%86%92%E7%99%BD%E8%8B%B9%E6%9E%9C%E9%BC%A0%E6%A0%87/)
 
 ## 其他辅助技巧
 1.打开安全和隐私中的任何来源 
