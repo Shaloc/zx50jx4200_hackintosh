@@ -39,7 +39,7 @@ DW1820A 驱动教程[地址](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driv
 
 3.无法使用pppoe拨号 未测试
 
-4.HDMI音频有输出，但是会破音（据RehabMan大佬的驱动详情是无法驱动HDMI_Audio的FakeID，所以音频破音）
+4.HDMI音频有输出，但是会破音（据RehabMan大佬的驱动详情应该是没有fake hdmi音频的id，待修复）
 
 5.未知bug
 
