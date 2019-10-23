@@ -268,14 +268,16 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x03,0x0)</key>
 			<dict>
+				<key>RM,device-id</key>
+				<data>
+				EhMAAA==
+				</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
 				<data>
 				AwAAAA==
 				</data>
-				<key>no-controller-patch</key>
-				<integer>1</integer>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>

@@ -884,9 +884,11 @@ DefinitionBlock ("", "SSDT", 1, "SaSsdt", "SaSsdt ", 0x00003000)
                 Return (Package()
                 {
                     "layout-id", Buffer() { 3, 0x00, 0x00, 0x00 },
+                    "RM,device-id", Buffer() { 0x0c, 0x0d, 0x00, 0x00 },
                     "hda-gfx", Buffer() { "onboard-1" },
                 })
             }
+            
         }
 
         Device (IGPU)
@@ -4171,8 +4173,10 @@ DefinitionBlock ("", "SSDT", 1, "SaSsdt", "SaSsdt ", 0x00003000)
                 If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
                 Return (Package()
                 {
+                    "device-id", Buffer() { 0x12, 0x04, 0x00, 0x00 },
                     "AAPL,ig-platform-id", Buffer() { 0x06, 0x00, 0x26, 0x0a },
                     "hda-gfx", Buffer() { "onboard-1" },
+                    "model", Buffer() { "Intel HD 4600" },
                 })
             }
             
