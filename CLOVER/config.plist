@@ -153,11 +153,13 @@
 		<key>Audio</key>
 		<dict>
 			<key>ResetHDA</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>HDMIInjection</key>
 		<false/>
-		<key>LANInjection</key>
+		<key>Inject</key>
+		<false/>
+		<key>LpcTune</key>
 		<false/>
 		<key>Properties</key>
 		<dict>
@@ -305,7 +307,7 @@
 			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -438,24 +440,6 @@
 				<key>Comment</key>
 				<string>（第一组）禁用多余的hdmi并开启hdmi音频</string>
 				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				AQUJAAAEAACHAAAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>
-				/wAJAAAIAACHAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio, port 0105(12), 0x0a260005 0x0a260006, 0x0d220003, 0x0a2e000a, 0x0a26000a</string>
-				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
@@ -467,7 +451,7 @@
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>
-				/wUSAAAIAACHAAAA
+				/wUJAAAIAACHAAAA
 				</data>
 			</dict>
 		</array>

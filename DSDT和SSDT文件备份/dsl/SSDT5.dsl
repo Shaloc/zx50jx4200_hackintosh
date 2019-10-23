@@ -4179,8 +4179,7 @@ DefinitionBlock ("", "SSDT", 1, "SaSsdt", "SaSsdt ", 0x00003000)
                     "model", Buffer() { "Intel HD 4600" },
                 })
             }
-            
-        }
+         }
     }
 }
 

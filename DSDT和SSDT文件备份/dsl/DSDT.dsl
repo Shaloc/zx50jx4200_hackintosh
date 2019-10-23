@@ -8619,6 +8619,7 @@ DefinitionBlock ("", "DSDT", 2, "_ASUS_", "Notebook", 0x00000012)
                 Return (Package()
                 {
                     "layout-id", Buffer() { 3, 0x00, 0x00, 0x00 },
+                    "hda-gfx", Buffer() { "onboard-1" },
                     "PinConfigurations", Buffer() { },
                     //"MaximumBootBeepVolume", 77,
                 })
@@ -10105,7 +10106,7 @@ Return (Package (0x02)
                     Store (0x07D9, OSYS)
                 }
 
-                If (_OSI ("Windows 2012"))
+                If(LOr(_OSI("Darwin"),_OSI("Windows 2012")))
                 {
                     Store (0x07DC, OSYS)
                 }
@@ -10972,7 +10973,7 @@ Return (Package (0x02)
             Name (_HID, "INT3420")  // _HID: Hardware ID
             Method (_STA, 0, NotSerialized)  // _STA: Status
             {
-                If (_OSI ("Windows 2012"))
+                If(LOr(_OSI("Darwin"),_OSI("Windows 2012")))
                 {
                     If (LEqual (BID, BW2C))
                     {
@@ -12318,7 +12319,6 @@ Return (Package (0x02)
  
                 Store (DerefOf (Index (PWKB, Local0)), Local1)
                 ^^PCI0.LPCB.EC0.WRAM (0x04B1, Local1) // Haswell/Ivy
-                ^^PCI0.LPCB.EC0.WRAM (0x044B, Local1) // Sandy/Ivy
                 Return (Local0)
             }
  
