@@ -270,10 +270,6 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x03,0x0)</key>
 			<dict>
-				<key>RM,device-id</key>
-				<data>
-				EhMAAA==
-				</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
@@ -438,12 +434,12 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>（第一组）禁用多余的hdmi并开启hdmi音频</string>
+				<string>for 0x0a260006 disable 0204 port, change 0105 DP port to 0204 HDMI (RehabMan)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AQUJAAAEAACHAAAA
+				AQUJAAAEAACHAAAAAgQJAAAEAACHAAAA
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
@@ -451,7 +447,7 @@
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>
-				/wUJAAAIAACHAAAA
+				AgQJAAAIAACHAAAA/wAAAAEAAABAAAAA
 				</data>
 			</dict>
 		</array>

@@ -100,7 +100,7 @@
 					<key>Check Infinitely</key>
 					<false/>
 					<key>Disable</key>
-					<true/>
+					<false/>
 					<key>Sleep Nodes</key>
 					<false/>
 					<key>Update Nodes</key>
@@ -352,7 +352,7 @@
 				<key>Disabled HDMI</key>
 				<dict>
 					<key>Disable</key>
-					<true/>
+					<false/>
 				</dict>
 			</dict>
 			<key>IOClass</key>
