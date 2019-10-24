@@ -152,8 +152,10 @@
 	<dict>
 		<key>Audio</key>
 		<dict>
+			<key>Inject</key>
+			<string>No</string>
 			<key>ResetHDA</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>HDMIInjection</key>
 		<false/>
@@ -348,8 +350,10 @@
 			MTczSEdFLUUxMQogAAAA/gBDTU4KICAgICAgICAgAAAA/gBOMTcz
 			SEdFLUUxMQogAOA=
 			</data>
+			<key>HorizontalSyncPulseWidth</key>
+			<string>0x32</string>
 			<key>Inject</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Inject</key>
 		<dict>
