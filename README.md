@@ -13,10 +13,9 @@ CPU：Intel i5-4200h
 
 显卡：Intel HD 4600 + GTX950M(已屏蔽）
 
-外存：东芝120G m.2 SSD + 原厂1t机械
+外存：120G M.2 SSD 
 
-网卡/蓝牙：无线网卡蓝牙更换为 DW1560 NGFF接口
-## 其他网卡驱动
+网卡/蓝牙：无线网卡蓝牙更换为 DW1560 M.2接口
 
 ### 原装网卡驱动WiFi教程地址
 
@@ -27,7 +26,7 @@ FakePCIID_Broadcom_WiFi.kext
 BrcmFirmwareData.kext
 BrcmPatchRAM2.kext 
 ```
-原装网卡驱动教程[地址](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1829501&highlight=AR9565 "试试效果")
+原装网卡驱动教程[地址](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1829501&highlight=AR9565)
 
 DW1820A 驱动教程[地址](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)
 
@@ -39,7 +38,7 @@ DW1820A 驱动教程[地址](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driv
 
 3.无法使用pppoe拨号 未测试
 
-4.HDMI音频有输出，但是会破音（据RehabMan大佬的驱动详情应该是没有fake hdmi音频的id，待修复）
+4.HDMI视频正常，音频有输出，但是会破音
 
 5.未知bug
 
