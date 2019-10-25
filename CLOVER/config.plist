@@ -169,46 +169,10 @@
 			<dict>
 				<key>## @1 HDMI</key>
 				<string></string>
-				<key>## @2 HDMI</key>
-				<string></string>
-				<key>## @3 HDMI</key>
-				<string></string>
 				<key>## patch1</key>
 				<string>Enable internal display after sleep for 0x0a2e000a, 0x0a26000a</string>
 				<key>#HDMI Port</key>
 				<string>0x3e9b0000, 0306 port</string>
-				<key>#framebuffer-con2-alldata</key>
-				<data>
-				AwYIAAAEAADHAwAA
-				</data>
-				<key>#framebuffer-con2-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-con2-flags</key>
-				<data>
-				BgAAAA==
-				</data>
-				<key>#framebuffer-con2-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
-				<key>#framebuffer-con2-type</key>
-				<data>
-				AAgAAA==
-				</data>
-				<key>#framebuffer-con3-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-con3-flags</key>
-				<data>
-				BgAAAA==
-				</data>
-				<key>#framebuffer-con3-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
-				<key>#framebuffer-con3-type</key>
-				<data>
-				AAgAAA==
-				</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>
 				BgAmCg==
