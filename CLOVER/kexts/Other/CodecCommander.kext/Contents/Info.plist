@@ -343,16 +343,10 @@
 			<string>org.tw.CodecCommander</string>
 			<key>Codec Profile</key>
 			<dict>
-				<key>1002</key>
-				<string>Disabled HDMI</string>
-				<key>10de</key>
-				<string>Disabled HDMI</string>
-				<key>8086</key>
-				<string>Disabled HDMI</string>
 				<key>Disabled HDMI</key>
 				<dict>
 					<key>Disable</key>
-					<true/>
+					<false/>
 				</dict>
 			</dict>
 			<key>IOClass</key>
