@@ -8619,7 +8619,7 @@ DefinitionBlock ("", "DSDT", 2, "_ASUS_", "Notebook", 0x00000012)
                 Return (Package()
                 {
                     "layout-id", Buffer() { 3, 0x00, 0x00, 0x00 },
-                    "PinConfigurations", Buffer() { },
+                    "PinConfigurations", Buffer() { }
                     //"MaximumBootBeepVolume", 77,
                 })
             }
