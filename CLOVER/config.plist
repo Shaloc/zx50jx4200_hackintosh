@@ -69,6 +69,20 @@
 					WERTTQ==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change GFX0 to IGPU</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0ZYMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					SUdQVQ==
+					</data>
+				</dict>
 			</array>
 			<key>Rtc8Allowed</key>
 			<false/>
@@ -192,15 +206,6 @@
 				<integer>3</integer>
 				<key>model</key>
 				<string>8 Series/C220 Series Chipset High Definition Audio Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x3,0x0) </key>
-			<dict>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>layout-id</key>
-				<integer>3</integer>
-				<key>model</key>
-				<string>Xeon E3-1200 v3/4th Gen Core Processor HD Audio Controller (0x80860C0C)</string>
 			</dict>
 		</dict>
 		<key>USB</key>
