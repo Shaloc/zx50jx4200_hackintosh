@@ -104,7 +104,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 gfxrst=4</string>
+		<string>dart=0 nv_disable=1</string>
 		<key>DefaultVolume</key>
 		<string>LastbootedVolume</string>
 		<key>IgnoreNVRAMBoot</key>
@@ -130,6 +130,8 @@
 		<key>HDMIInjection</key>
 		<false/>
 		<key>Inject</key>
+		<false/>
+		<key>LANInjection</key>
 		<false/>
 		<key>LpcTune</key>
 		<false/>
@@ -224,8 +226,6 @@
 	<dict>
 		<key>EDID</key>
 		<dict>
-			<key>HorizontalSyncPulseWidth</key>
-			<string>0x32</string>
 			<key>Inject</key>
 			<false/>
 		</dict>
